@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "تبادل",
+    "slug": "tabadul-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "backgroundColor": "#0B1D3A"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tabadul.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "نحتاج الكاميرا لالتقاط صورة حية للتوثيق ولمكالمات الفيديو",
+        "NSMicrophoneUsageDescription": "نحتاج الميكروفون للمكالمات الصوتية والمرئية",
+        "NSPhotoLibraryUsageDescription": "نحتاج الوصول للصور لرفع وثيقة الهوية"
+      }
+    },
+    "android": {
+      "package": "com.tabadul.app",
+      "permissions": ["CAMERA", "RECORD_AUDIO", "INTERNET"],
+      "adaptiveIcon": {
+        "backgroundColor": "#0B1D3A"
+      }
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "نحتاج الكاميرا للتوثيق الحيوي ومكالمات الفيديو"
+        }
+      ],
+      "expo-secure-store"
+    ],
+    "extra": {
+      "apiUrl": "https://api.yourapp.com/api/v1",
+      "wsUrl": "https://api.yourapp.com"
+    }
+  }
+}

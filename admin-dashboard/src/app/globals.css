@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: #0B1D3A;
+  color: #fff;
+}
+
+a {
+  color: inherit;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.card {
+  background: #132A52;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.btn {
+  background: #FFD700;
+  color: #0B1D3A;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-danger {
+  background: #E53935;
+  color: #fff;
+}
+
+.btn-secondary {
+  background: #22407A;
+  color: #fff;
+}
+
+.input {
+  background: #0B1D3A;
+  border: 1px solid #22407A;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.nav {
+  display: flex;
+  gap: 10px;
+  padding: 16px 24px;
+  border-bottom: 1px solid #132A52;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  padding: 8px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #9FB3D9;
+}
+
+.nav a.active {
+  background: #FFD700;
+  color: #0B1D3A;
+  font-weight: 700;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: right;
+  border-bottom: 1px solid #22407A;
+}
+
+.badge {
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.badge-pending { background: #FFA000; color: #000; }
+.badge-verified { background: #4CAF50; color: #fff; }
+.badge-rejected { background: #E53935; color: #fff; }
+.badge-banned { background: #E53935; color: #fff; }
